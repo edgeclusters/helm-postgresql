@@ -11,7 +11,8 @@ image:
   ## Secret must be manually created in the namespace.
   ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
   ##
-  # pullSecret: myRegistrKeySecretName
+  # imagePullSecrets:
+    # - name: myRegistrKeySecretName
 
 ## Expose the nifi service to be accessed from outside the cluster (LoadBalancer service).
 ## or access it from within the cluster (ClusterIP service). Set the service type and the port to serve it.
